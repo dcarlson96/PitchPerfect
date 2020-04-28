@@ -7,10 +7,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Record Sounds View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RecordSoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -56,11 +56,28 @@
                         <outlet property="recordingButton" destination="CcB-CX-6Gp" id="9UK-cw-1nT"/>
                         <outlet property="recordingLabel" destination="1ar-Tx-RIu" id="DLV-cG-fOm"/>
                         <outlet property="stopRecordingButton" destination="WJD-Q2-mPe" id="Jzc-ZV-APR"/>
+                        <segue destination="Xew-Cw-Ndr" kind="show" identifier="stopRecording" id="Xtb-8G-cHj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="137.94642857142856"/>
+        </scene>
+        <!--Play Sounds View Controller-->
+        <scene sceneID="ieb-Jq-I49">
+            <objects>
+                <viewController id="Xew-Cw-Ndr" customClass="PlaySoundsViewController" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1gZ-5M-D05">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="9NF-Iw-4bW"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="LfS-1Y-A83"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dYe-h0-Gwf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1952" y="138"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="RkV-Vj-oxW">
